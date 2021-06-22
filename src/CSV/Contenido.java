@@ -1,11 +1,11 @@
-package anime;
+package CSV;
 import CSV.Agregar;
 import CSV.Escribir;
 import static CSV.Escribir.ExportarCSV;
 import Interfaz.*;
 import java.util.ArrayList;
 import java.util.List;
-public class Anime {
+public class Contenido {
     public static void main(String[] args) {
         
         /*Inicio ini=new Inicio();

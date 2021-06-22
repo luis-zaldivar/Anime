@@ -18,6 +18,7 @@ public class Inicio extends javax.swing.JFrame {
         Añadir = new javax.swing.JButton();
         Vistos = new javax.swing.JButton();
         Salida = new javax.swing.JButton();
+        Siguiendo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -27,6 +28,8 @@ public class Inicio extends javax.swing.JFrame {
 
         Salida.setText("Salir");
 
+        Siguiendo.setText("Siguiendo");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -34,6 +37,8 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(Añadir)
+                .addGap(65, 65, 65)
+                .addComponent(Siguiendo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Vistos)
                 .addGap(23, 23, 23))
@@ -48,7 +53,8 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(72, 72, 72)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Añadir)
-                    .addComponent(Vistos))
+                    .addComponent(Vistos)
+                    .addComponent(Siguiendo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
                 .addComponent(Salida)
                 .addGap(23, 23, 23))
@@ -96,6 +102,7 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Añadir;
     private javax.swing.JButton Salida;
+    private javax.swing.JButton Siguiendo;
     private javax.swing.JButton Vistos;
     // End of variables declaration//GEN-END:variables
 }
