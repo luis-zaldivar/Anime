@@ -1,5 +1,7 @@
 package Interfaz;
 
+import javax.swing.WindowConstants;
+
 public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
@@ -23,10 +25,20 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Añadir.setText("Añadir");
+        Añadir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AñadirActionPerformed(evt);
+            }
+        });
 
         Vistos.setText("Visto");
 
         Salida.setText("Salir");
+        Salida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalidaActionPerformed(evt);
+            }
+        });
 
         Siguiendo.setText("Siguiendo");
 
@@ -62,6 +74,16 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AñadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AñadirActionPerformed
+        Añadir aña=new Añadir();
+        aña.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_AñadirActionPerformed
+
+    private void SalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalidaActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_SalidaActionPerformed
 
     /**
      * @param args the command line arguments

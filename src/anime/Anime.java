@@ -10,12 +10,14 @@ public class Anime {
         
         /*Inicio ini=new Inicio();
         ini.setVisible(true);
-        */
+       
         List<Agregar>anime=new ArrayList<Agregar>();
         anime.add(new Agregar("01","Higurashi"));
         anime.add(new Agregar("02","Inuyasha"));
         Escribir es=new Escribir();
-        ExportarCSV(anime);
+        ExportarCSV(anime); */
+        Inicio in=new Inicio();
+        in.setVisible(true);
     }
     
 }
